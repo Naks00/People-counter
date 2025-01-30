@@ -1,6 +1,7 @@
 # People-counter
 # People-counter
-Week 3: Sensor and Actuator Demonstration
+---
+# Week 3: Sensor and Actuator Demonstration
 During this week, I conducted tests for the individual sensors and actuators needed for the project. For the distance sensors, I evaluated their accuracy in detecting objects at varying ranges and ensured they can handle the required real-world conditions. The tilt sensor was tested for sensitivity to small angular changes, and the PIR sensor was validated for its ability to reliably detect motion. Each sensor was connected to the Raspberry Pi, and initial readings were logged to verify communication and data integrity. This testing phase ensured that all components were functioning as expected before integration into the larger system.
 
 Week 4: Sensor and Actuator Optimization
