@@ -36,8 +36,14 @@ The final assembly stage involved installing the Raspberry Pi into the housing a
 # Week 9: Demonstrating Model Functionality
 With the complete system assembled, I performed a full demonstration of the pedestrian counter. This included testing all sensors under various conditions and logging the results to confirm the device’s accuracy and reliability. While the web application was not yet implemented, data was displayed directly on a connected monitor or logged locally for analysis. Any minor adjustments were made to optimize performance based on the demonstration findings.
 
-#Week 10: Database Development for the Web Application
+# Week 10: Database Development for the Web Application
 The focus this week was on designing and implementing a database to store sensor readings and event logs. I created the database schema to include tables for devices, sensor data, and alerts. The database was integrated with the Raspberry Pi using SQLite, enabling efficient storage and retrieval of information.
 
 # Week 11: Web Application Development
-TODO
+This week, I focused on developing the web application that serves as the interface for monitoring and managing pedestrian counting data. The backend was built using Node.js to handle API requests, while SQLite was used as the database to store sensor readings.
+
+On the frontend, I used HTML, CSS, and JavaScript to create a user-friendly dashboard where real-time data from the Raspberry Pi is displayed. The web application allows users to view pedestrian counts, access historical data, and receive alerts based on predefined thresholds.
+
+API endpoints were implemented for fetching sensor data, adding new sensor readings, and managing devices. Security measures such as authentication and data validation were also added to protect the system from unauthorized access and incorrect data inputs.
+
+To test the web application, I deployed it locally and verified that sensor data was correctly stored and displayed. Debugging and performance optimization were also performed to ensure smooth operation.
