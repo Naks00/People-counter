@@ -6,7 +6,7 @@ During this week, I conducted tests for the individual sensors and actuators nee
 
 ## Components Used
 
--Raspberry Pi (Model used: Specify your model)
+-Raspberry Pi
 
 -HC-SR501 PIR Sensor (Motion detection)
 
