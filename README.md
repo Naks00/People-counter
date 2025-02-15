@@ -19,7 +19,7 @@ During this week, I conducted tests for the individual sensors and actuators nee
 -Jumper wires & Breadboard
 
 # Week 4: Schematic drawing
-Schematic drawing was created to provide a clear visual representation of how all components are connected. This includes wiring for the HC-SR501 PIR sensor, two HC-SR04 ultrasonic sensors, KY-002 shock sensor module, and the display module labeled 'QAPASS'. The schematic helps ensure proper connections and makes troubleshooting easier if any issues arise.
+Schematic drawing was created to provide a clear visual representation of how all components are connected. This includes wiring for the HC-SR501 PIR sensor, two HC-SR04 ultrasonic sensors, KY-002 shock sensor module, and the display module. The schematic helps ensure proper connections and makes troubleshooting easier if any issues arise.
 ![Schematic](Slike/shemaPC.png)
 
 # Week 5: Preparing Components for Housing
