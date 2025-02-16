@@ -29,6 +29,8 @@ This week focused on preparing the sensors and actuators for installation into t
 # Week 6: Finalizing the Housing
 Continuing from the previous week, I assembled the sensors, actuators, and other hardware into the prepared housing. This required precise alignment to ensure optimal functionality, particularly for the distance sensors, which needed unobstructed views of their measurement zones.
 
+![Case](Hardware/3D-design/Images/Case-lid-collage.png)
+
 # Week 7: Integrating Components with the Raspberry Pi
 This week marked the integration of all sensors and actuators with the Raspberry Pi. I set up GPIO pin configurations and connected the hardware to the Raspberry Pi using a custom breakout board. I developed a Python script to read sensor data and tested the full system for data acquisition accuracy. Debugging was done to resolve any issues with signal interference or communication errors.
 
