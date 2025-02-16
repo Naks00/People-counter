@@ -57,7 +57,9 @@ for sensor in SENSORS.values():
     GPIO.setup(sensor["ECHO"], GPIO.IN)
 ```
 # Week 8: Assembling the Complete System
-The final assembly stage involved installing the Raspberry Pi into the housing alongside the sensors and actuators. Cable management was a priority to prevent tangling and potential damage during operation. I tested the entire system to ensure all components worked seamlessly together. The housing was then securely sealed, and the device was powered on to verify its full functionality in a simulated environment.
+The final assembly stage involved installing the Raspberry Pi into the housing alongside the sensors and actuators. Unfortunately, cable management turned out to be a disaster—I hadn't thought it through beforehand, which led to a messy and unorganized setup. This made the process more challenging and required extra effort to prevent tangling and potential damage during operation. Despite this setback, I managed to test the entire system to ensure all components worked together. Once everything was in place, the housing was securely sealed, and the device was powered on to verify its full functionality in a simulated environment.
+![Cable managment](Hardware/Images/Disaster-cable-managment.jpg)
+
 
 # Week 9: Demonstrating Model Functionality
 With the complete system assembled, I performed a full demonstration of the pedestrian counter. This included testing all sensors under various conditions and logging the results to confirm the device’s accuracy and reliability. While the web application was not yet implemented, data was displayed directly on a connected monitor or logged locally for analysis. Any minor adjustments were made to optimize performance based on the demonstration findings.
