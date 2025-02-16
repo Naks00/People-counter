@@ -24,7 +24,7 @@ Schematic drawing was created to provide a clear visual representation of how al
 
 # Week 5: Preparing Components for Housing
 This week focused on preparing the sensors and actuators for installation into the project’s housing. I designed and 3D-printed mounts and supports to securely hold each sensor in place within the enclosure. Protective casings were applied to ensure durability. The housing design was reviewed to accommodate all components.
-![Case](Hardware/shemaPC.png)
+![Case](Hardware/3D-design/Images/Case-collage.png)
 
 # Week 6: Finalizing the Housing
 Continuing from the previous week, I assembled the sensors, actuators, and other hardware into the prepared housing. This required precise alignment to ensure optimal functionality, particularly for the distance sensors, which needed unobstructed views of their measurement zones.
