@@ -34,6 +34,28 @@ Continuing from the previous week, I assembled the sensors, actuators, and other
 # Week 7: Integrating Components with the Raspberry Pi
 This week marked the integration of all sensors and actuators with the Raspberry Pi. I set up GPIO pin configurations and connected the hardware to the Raspberry Pi using a custom breakout board. I developed a Python script to read sensor data and tested the full system for data acquisition accuracy. Debugging was done to resolve any issues with signal interference or communication errors.
 
+**Code**:
+```c
+SENSORS = {
+    "Left": {"TRIG": 27, "ECHO": 22},  # Left-side ultrasonic sensor
+    "Right": {"TRIG": 10, "ECHO": 9},  # Right-side ultrasonic sensor
+}
+
+PIR_SENSOR = 17  # Motion sensor (detects heat)
+SHOCK_SENSOR = 5  # Detects movement or tilt
+
+# LCD Setup
+lcd = CharLCD(cols=16, rows=2, pin_rs=7, pin_e=8, pins_data=[25, 24, 23, 18], numbering_mode=GPIO.BCM)
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(PIR_SENSOR, GPIO.IN)
+GPIO.setup(SHOCK_SENSOR, GPIO.IN)
+
+# Setup GPIO for ultrasonic sensors
+for sensor in SENSORS.values():
+    GPIO.setup(sensor["TRIG"], GPIO.OUT)
+    GPIO.setup(sensor["ECHO"], GPIO.IN)
+```
 # Week 8: Assembling the Complete System
 The final assembly stage involved installing the Raspberry Pi into the housing alongside the sensors and actuators. Cable management was a priority to prevent tangling and potential damage during operation. I tested the entire system to ensure all components worked seamlessly together. The housing was then securely sealed, and the device was powered on to verify its full functionality in a simulated environment.
 
