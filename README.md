@@ -14,7 +14,7 @@
 11. [Final Remarks](#final-remarks)
 
 ## [Project Overview](pplx://action/followup)
-The People-counter project is a system designed to accurately monitor pedestrian traffic using a combination of distance sensors, motion detection, and a Raspberry Pi. The data collected is stored in an SQLite database and presented through a Flask-based web application, providing real-time pedestrian counts, historical data access, and threshold-based alerts.
+The People-counter project is a system designed to accurately monitor pedestrian traffic using a combination of distance sensors, motion detection, and a Raspberry Pi. The data collected is stored in an SQLite database and presented through a Flask-based web application, providing real-time pedestrian counts, historical data access.
 
 ---
 
