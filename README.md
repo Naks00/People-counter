@@ -70,10 +70,14 @@ With the complete system assembled, I performed a full demonstration of the pede
 The focus this week was on designing and implementing a database to store sensor readings and event logs. I created the database schema to include tables for devices, sensor data, and alerts. The database was integrated with the Raspberry Pi using SQLite, enabling efficient storage and retrieval of information.
 
 # Week 11: Web Application Development
-This week, I focused on developing the web application that serves as the interface for monitoring and managing pedestrian counting data. The backend was built using Node.js to handle API requests, while SQLite was used as the database to store sensor readings.
+This week, I focused on developing a web application that serves as an interface for monitoring and managing pedestrian counting data. The backend was built using Flask to handle API requests, while SQLite was used as the database to store sensor readings.
 
-On the frontend, I used HTML, CSS, and JavaScript to create a user-friendly dashboard where real-time data from the Raspberry Pi is displayed. The web application allows users to view pedestrian counts, access historical data, and receive alerts based on predefined thresholds.
+On the frontend, I utilized HTML, CSS, and JavaScript to create a user-friendly dashboard that displays real-time data from the Raspberry Pi. The web application allows users to:
 
-API endpoints were implemented for fetching sensor data, adding new sensor readings, and managing devices. Security measures such as authentication and data validation were also added to protect the system from unauthorized access and incorrect data inputs.
+-View current pedestrian counts
 
-To test the web application, I deployed it locally and verified that sensor data was correctly stored and displayed. Debugging and performance optimization were also performed to ensure smooth operation.
+-Access historical data
+
+I implemented various API endpoints for functionalities such as fetching sensor data, adding new sensor readings, and managing devices. To ensure the system's integrity, I incorporated security measures including authentication and data validation to protect against unauthorized access and incorrect data inputs.
+
+To test the web application, I deployed it locally and verified that sensor data was correctly stored and displayed. Additionally, I performed debugging and optimization to enhance performance and ensure smooth operation.
