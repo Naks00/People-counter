@@ -111,4 +111,4 @@ I implemented various API endpoints for functionalities such as fetching sensor 
 To test the web application, I deployed it locally and verified that sensor data was correctly stored and displayed. Additionally, I performed debugging and optimization to enhance performance and ensure smooth operation.
 
 ## [Final Remarks](pplx://action/followup)
-The People-counter project has successfully integrated hardware and software components to monitor pedestrian traffic. Key achievements include accurate sensor data acquisition, robust database design, and a user-friendly web application. Future improvements could focus on refining cable management, enhancing the web application with more advanced data visualizations, and exploring machine learning algorithms to predict pedestrian traffic patterns.
+The People-counter project has successfully integrated hardware and software components to monitor pedestrian traffic. Key achievements include accurate sensor data acquisition, database setup, and a web application. Future improvements could focus on refining cable management, enhancing the web application with more advanced data visualizations.
