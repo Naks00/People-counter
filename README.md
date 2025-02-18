@@ -67,8 +67,20 @@ With the complete system assembled, I performed a full demonstration of the pede
 **Sensor test source code:** [Tests](Software/People-counter/tests)
 
 # Week 10: Database Development for the Web Application
-The focus this week was on designing and implementing a database to store sensor readings and event logs. I created the database schema to include tables for devices, sensor data, and alerts. The database was integrated with the Raspberry Pi using SQLite, enabling efficient storage and retrieval of information.
+The focus this week was on designing and implementing a database to store sensor readings and event logs. I created the database schema to include tables for summary and pedestrians. The database was integrated with the Raspberry Pi using SQLite, enabling efficient storage and retrieval of information.
+```c
+CREATE TABLE summary (
+    id INTEGER PRIMARY KEY,
+    total_count INTEGER NOT NULL
+);
 
+CREATE TABLE pedestrians (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    timestamp TEXT NOT NULL,
+    direction TEXT NOT NULL
+);
+
+```
 # Week 11: Web Application Development
 This week, I focused on developing a web application that serves as an interface for monitoring and managing pedestrian counting data. The backend was built using Flask to handle API requests, while SQLite was used as the database to store sensor readings.
 
