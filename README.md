@@ -48,3 +48,25 @@ Continuing from the previous week, I assembled the sensors, actuators, and other
 This week marked the integration of all sensors and actuators with the Raspberry Pi. I set up GPIO pin configurations and connected the hardware to the Raspberry Pi using a custom breakout board. I developed a Python script to read sensor data and tested the full system for data acquisition accuracy. Debugging was done to resolve any issues with signal interference or communication errors.
 
 **[Code](pplx://action/followup):**
+```c
+GPIO pin assignments for sensors and LCD
+SENSORS = {
+"Left": {"TRIG": 27, "ECHO": 22}, # Left-side ultrasonic sensor
+"Right": {"TRIG": 10, "ECHO": 9}, # Right-side ultrasonic sensor
+}
+
+PIR_SENSOR = 17 # Motion sensor (detects heat)
+SHOCK_SENSOR = 5 # Detects movement or tilt
+
+LCD Setup - Configures the LCD screen for displaying the count
+lcd = CharLCD(cols=16, rows=2, pin_rs=7, pin_e=8, pins_data=, numbering_mode=GPIO.BCM)
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(PIR_SENSOR, GPIO.IN)
+GPIO.setup(SHOCK_SENSOR, GPIO.IN)
+
+Setup GPIO for ultrasonic sensors
+for sensor in SENSORS.values():
+GPIO.setup(sensor["TRIG"], GPIO.OUT)
+GPIO.setup(sensor["ECHO"], GPIO.IN)
+```
