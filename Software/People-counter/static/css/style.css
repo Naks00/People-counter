@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+.counter {
+    font-size: 50px;
+    font-weight: bold;
+   
+    margin: 20px 0;
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color:rgb(236, 29, 36);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: darkred;
+}
