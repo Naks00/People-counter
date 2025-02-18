@@ -70,3 +70,45 @@ for sensor in SENSORS.values():
 GPIO.setup(sensor["TRIG"], GPIO.OUT)
 GPIO.setup(sensor["ECHO"], GPIO.IN)
 ```
+
+## [Week 8: Assembling the Complete System](pplx://action/followup)
+The final assembly stage involved installing the Raspberry Pi into the housing alongside the sensors and actuators. Unfortunately, cable management turned out to be a disaster—I hadn't thought it through beforehand, which led to a messy and unorganized setup. This made the process more challenging and required extra effort to prevent tangling and potential damage during operation. Despite this setback, I managed to test the entire system to ensure all components worked together. Once everything was in place, the housing was securely sealed, and the device was powered on to verify its full functionality in a simulated environment.
+
+![Cable managment](Hardware/Images/Disaster-cable-managment.jpg)
+
+## [Week 9: Demonstrating Model Functionality](pplx://action/followup)
+With the complete system assembled, I performed a full demonstration of the pedestrian counter. This included testing all sensors under various conditions and logging the results to confirm the device’s accuracy and reliability. While the web application was not yet implemented, data was displayed directly on a connected monitor or logged locally for analysis. Any minor adjustments were made to optimize performance based on the demonstration findings.
+
+**[Sensor test source code](pplx://action/followup):** [Tests](Software/People-counter/tests)
+
+## [Week 10: Database Development for the Web Application](pplx://action/followup)
+The focus this week was on designing and implementing a database to store sensor readings and event logs. I created the database schema to include tables for summary and pedestrians. The database was integrated with the Raspberry Pi using SQLite, enabling efficient storage and retrieval of information.
+```c
+CREATE TABLE summary (
+id INTEGER PRIMARY KEY,
+total_count INTEGER NOT NULL
+);
+
+CREATE TABLE pedestrians (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp TEXT NOT NULL,
+direction TEXT NOT NULL
+);
+```
+
+## [Week 11: Web Application Development](pplx://action/followup)
+This week, I focused on developing a web application that serves as an interface for monitoring and managing pedestrian counting data. The backend was built using Flask to handle API requests, while SQLite was used as the database to store sensor readings.
+
+On the frontend, I utilized HTML, CSS, and JavaScript to create a user-friendly dashboard that displays real-time data from the Raspberry Pi. The web application allows users to:
+
+- View current pedestrian counts
+- Access historical data
+
+![Landing-page](Software/People-counter/landing-page.png)
+
+I implemented various API endpoints for functionalities such as fetching sensor data, adding new sensor readings, and managing devices. To ensure the system's integrity, I incorporated security measures including authentication and data validation to protect against unauthorized access and incorrect data inputs.
+
+To test the web application, I deployed it locally and verified that sensor data was correctly stored and displayed. Additionally, I performed debugging and optimization to enhance performance and ensure smooth operation.
+
+## [Final Remarks](pplx://action/followup)
+The People-counter project has successfully integrated hardware and software components to monitor pedestrian traffic. Key achievements include accurate sensor data acquisition, robust database design, and a user-friendly web application. Future improvements could focus on refining cable management, enhancing the web application with more advanced data visualizations, and exploring machine learning algorithms to predict pedestrian traffic patterns.
