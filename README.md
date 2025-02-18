@@ -74,6 +74,8 @@ This week, I focused on developing a web application that serves as an interface
 
 On the frontend, I utilized HTML, CSS, and JavaScript to create a user-friendly dashboard that displays real-time data from the Raspberry Pi. The web application allows users to:
 
+![Landing-page](Software/People-counter/landing-page.png)
+
 -View current pedestrian counts
 
 -Access historical data
