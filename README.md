@@ -20,7 +20,7 @@ During this week, I conducted tests for the individual sensors and actuators nee
 
 # Week 4: Schematic drawing
 Schematic drawing was created to provide a clear visual representation of how all components are connected. This includes wiring for the HC-SR501 PIR sensor, two HC-SR04 ultrasonic sensors, KY-002 shock sensor module, and the display module. The schematic helps ensure proper connections and makes troubleshooting easier if any issues arise.
-![Schematic](Software/shemaPC.png)
+![Schematic](Software/Frizting/shemaPC.png)
 
 # Week 5: Preparing Components for Housing
 This week focused on preparing the sensors and actuators for installation into the project’s housing. I designed and 3D-printed mounts and supports to securely hold each sensor in place within the enclosure. Protective casings were applied to ensure durability. The housing design was reviewed to accommodate all components.
