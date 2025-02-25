@@ -8,22 +8,22 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Pedestrian Counter</h1>
+    
     <div class="counter">People Count: <span id="count">0</span></div>
     <button id="reset-button">Reset Counter</button>
 
-    <h1>Upravljanje Senzorima</h1>
+    <h1>Sensor Managment</h1>
 
     <section>
-        <h2>Popis Senzora</h2>
-        <div class="loading">Učitavanje...</div>
+        <h2>Sensors list</h2>
+        <div class="loading">Loading...</div>
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Naziv</th>
-                    <th>Lokacija</th>
-                    <th>Akcija</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody id="senzor-lista"></tbody>
@@ -31,12 +31,12 @@
     </section>
     
     <section>
-        <h2>Dodaj ili Uredi Senzor</h2>
+        <h2>Add or Edit Sensor</h2>
         <form id="senzor-form">
             <input type="hidden" id="senzor-id">
             <input type="text" id="naziv" placeholder="Naziv senzora" required>
             <input type="text" id="lokacija" placeholder="Lokacija" required>
-            <button type="submit">Dodaj</button>
+            <button type="submit">Add</button>
         </form>
         <div id="form-feedback" class="error"></div>
     </section>
@@ -64,8 +64,8 @@
                                 <td>${senzor.id}</td>
                                 <td>${senzor.sensor_name}</td>
                                 <td>${senzor.sensor_location}</td>
-                                <td><button onclick="editSenzor(${senzor.id}, '${senzor.sensor_name}', '${senzor.sensor_location}')">Uredi</button> 
-                                    <button onclick="obrisiSenzor(${senzor.id})">Obriši</button></td>`;
+                                <td><button onclick="editSenzor(${senzor.id}, '${senzor.sensor_name}', '${senzor.sensor_location}')">Edit</button> 
+                                    <button onclick="obrisiSenzor(${senzor.id})">Delete</button></td>`;
                             senzorLista.appendChild(row);
                         });
                     })
