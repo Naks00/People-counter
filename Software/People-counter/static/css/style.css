@@ -25,3 +25,23 @@ button {
 button:hover {
     background-color: darkred;
 }
+table {
+    border-collapse: collapse;
+    width: 50%; 
+    margin: auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+/* Optional: Add some basic styling to the section */
+section {
+    margin-top: 20px;
+}
