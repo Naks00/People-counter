@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 app = Flask(__name__)
 
-DB_PATH = "C:\\Users\\ante.nakic\Desktop\ppl\People-counter\Software\People-counter\pedestrian_counter.db"
+DB_PATH = "C:\\Users\\Public\\People-counter\\pedestrian_counter.db"
 
 def create_sensors_table():
     conn = sqlite3.connect(DB_PATH)
@@ -67,7 +67,7 @@ def count():
 
 @app.route("/sensors")
 def sensors():
-    return jsonify(sensors=get_sensors())
+    return jsonify(get_sensors())
 
 @app.route("/api/add-sensor", methods=["POST"])
 def add_sensor():
